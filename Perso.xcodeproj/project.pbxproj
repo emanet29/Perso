@@ -14,6 +14,7 @@
 		4C940AA0212C39D3009F0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C940A9E212C39D3009F0916 /* LaunchScreen.storyboard */; };
 		4C940AA8212C3AEE009F0916 /* Chien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C940AA7212C3AEE009F0916 /* Chien.swift */; };
 		4C940AAA212C3B22009F0916 /* Aliment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C940AA9212C3B22009F0916 /* Aliment.swift */; };
+		4C940AAC212C454F009F0916 /* Etat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C940AAB212C454F009F0916 /* Etat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4C940AA1212C39D3009F0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C940AA7212C3AEE009F0916 /* Chien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chien.swift; sourceTree = "<group>"; };
 		4C940AA9212C3B22009F0916 /* Aliment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliment.swift; sourceTree = "<group>"; };
+		4C940AAB212C454F009F0916 /* Etat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				4C940A95212C39D2009F0916 /* AppDelegate.swift */,
 				4C940A97212C39D2009F0916 /* ViewController.swift */,
+				4C940AAB212C454F009F0916 /* Etat.swift */,
 				4C940A99212C39D2009F0916 /* Main.storyboard */,
 				4C940AA9212C3B22009F0916 /* Aliment.swift */,
 				4C940AA7212C3AEE009F0916 /* Chien.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C940AA8212C3AEE009F0916 /* Chien.swift in Sources */,
+				4C940AAC212C454F009F0916 /* Etat.swift in Sources */,
 				4C940A98212C39D2009F0916 /* ViewController.swift in Sources */,
 				4C940AAA212C3B22009F0916 /* Aliment.swift in Sources */,
 				4C940A96212C39D2009F0916 /* AppDelegate.swift in Sources */,

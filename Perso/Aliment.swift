@@ -9,7 +9,11 @@
 import UIKit
 
 class Aliment: UIImageView {
-
+    
+    var gout: Etat = .normal
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         isUserInteractionEnabled = true

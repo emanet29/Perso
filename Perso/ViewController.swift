@@ -20,13 +20,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gateau.gout = .cestBon
+        piment.gout = .caPique
     }
-
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first, let vue = touch.view as? Aliment else { return }
         frameDeBase = vue.frame
-        
-        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -39,7 +39,13 @@ class ViewController: UIViewController {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first, let vue = touch.view as? Aliment else { return }
         guard let ancienneFrame = frameDeBase  else { return }
+        let position = touch.location(in: self.view)
+        if chien.frame.contains(position) {
+            chien.etatDuChien = vue.gout
+        }
         vue.frame = ancienneFrame
+        
+        
     }
 }
 
