@@ -12,10 +12,14 @@ class Aliment: UIImageView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        isUserInteractionEnabled = true
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        isUserInteractionEnabled = true
+        
     }
     
     

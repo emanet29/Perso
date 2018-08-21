@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var gateau: Aliment!
     @IBOutlet weak var piment: Aliment!
     
+    var frameDeBase: CGRect?
     
     
     override func viewDidLoad() {
@@ -21,7 +22,24 @@ class ViewController: UIViewController {
         
     }
 
-
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first, let vue = touch.view as? Aliment else { return }
+        frameDeBase = vue.frame
+        
+        
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first, let vue = touch.view as? Aliment else { return }
+        let position = touch.location(in: self.view)
+        vue.center = position
+        
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first, let vue = touch.view as? Aliment else { return }
+        guard let ancienneFrame = frameDeBase  else { return }
+        vue.frame = ancienneFrame
+    }
 }
 
